@@ -1,0 +1,34 @@
+[org/gnome/desktop/interface]
+gtk-theme='Adwaita'
+icon-theme='Adwaita'
+font-name='Cantarell 11'
+monospace-font-name='Monospace 11'
+enable-animations=true
+cursor-theme='Adwaita'
+cursor-size=24
+
+[org/gnome/desktop/wm/preferences]
+num-workspaces=5
+button-layout='appmenu:minimize,maximize,close'
+focus-mode='click'
+titlebar-font='Cantarell Bold 11'
+
+[org/gnome/shell]
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop']
+
+[org/gnome/shell/extensions/dash-to-dock]
+dash-max-icon-size=48
+dock-position='BOTTOM'
+show-trash=true
+show-mounts=true
+
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'us')]
+xkb-options=['']
+
+[org/gnome/desktop/peripherals/keyboard]
+delay=500
+repeat-interval=30
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=false

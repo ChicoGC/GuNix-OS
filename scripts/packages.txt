@@ -1,0 +1,17 @@
+base
+linux
+linux-firmware
+grub
+efibootmgr
+os-prober
+networkmanager
+pulseaudio
+git
+vim
+nano
+curl
+wget
+htop
+neofetch
+xdg-utils
+xdg-user-dirs

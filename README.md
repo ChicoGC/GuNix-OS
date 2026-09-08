@@ -19,7 +19,7 @@ We welcome contributions! See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for g
 
 ## Join Us
 
-- Discord: [Coming soon]
+- Discord: https://discord.gg/qtHZwzvRvR
 - GitHub: https://github.com/ChicoGC/GuNix-OS
 
 ---

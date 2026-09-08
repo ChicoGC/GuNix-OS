@@ -24,4 +24,8 @@ We welcome contributions! See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for g
 
 ---
 
-*A project by some teenagers trying to make cool stuff!*
+*A project entirely by a teenager, don't expect big things!*
+
+## Salve! 💚💛
+
+Um salve a minha galerinha do Brasil! Um projeto dos latinos para o mundo.

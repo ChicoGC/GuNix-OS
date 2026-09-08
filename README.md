@@ -1,0 +1,27 @@
+# GuNix OS
+
+An Arch-based Linux distribution with a focus on simplicity and customization.
+
+## Features
+
+- Based on Arch Linux
+- Hyprland or GNOME desktop environment support
+- Minimal and fast installation
+- Community-driven development
+
+## Installation
+
+See [docs/INSTALL.md](docs/INSTALL.md) for installation instructions.
+
+## Contributing
+
+We welcome contributions! See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
+
+## Join Us
+
+- Discord: [Coming soon]
+- GitHub: https://github.com/ChicoGC/GuNix-OS
+
+---
+
+*A project by some teenagers trying to make cool stuff!*

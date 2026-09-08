@@ -25,8 +25,9 @@ Thanks for your interest in contributing! Here's how you can help:
 - Desktop environment configs
 - Documentation
 - Testing
-- Logo and design (we have Gus!)
+- Logo and design (Gus especially, he looks so ahh)
 
 ## Questions?
 
 Join our Discord or open an issue on GitHub.
+https://discord.gg/qtHZwzvRvR

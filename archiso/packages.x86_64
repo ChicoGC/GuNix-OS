@@ -1,0 +1,47 @@
+base
+linux
+linux-firmware
+systemd-resolvconf
+
+# Boot
+grub
+efibootmgr
+os-prober
+syslinux
+
+# Filesystem tools
+btrfs-progs
+dosfstools
+e2fsprogs
+exfatprogs
+ntfs-3g
+
+# Networking (live environment)
+networkmanager
+iwd
+dhcpcd
+wpa_supplicant
+openssh
+
+# Tools
+sudo
+vim
+nano
+git
+curl
+wget
+htop
+man-db
+man-pages
+texinfo
+reflector
+rsync
+arch-install-scripts
+
+# Live ISO utilities
+mkinitcpio
+mkinitcpio-archiso
+memtest86+-efi
+
+# Archiso essentials
+bash-completion

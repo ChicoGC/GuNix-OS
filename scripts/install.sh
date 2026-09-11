@@ -59,6 +59,37 @@ case $de_choice in
         ;;
 esac
 
+# Apply GRUB theme
+echo ""
+if [ -d /boot/grub ] && [ -d "$SCRIPT_DIR/../config/grub-theme" ]; then
+    echo "Applying GuNix OS GRUB theme..."
+    mkdir -p /boot/grub/themes/gunix
+    cp -r "$SCRIPT_DIR/../config/grub-theme/"* /boot/grub/themes/gunix/
+    if grep -q "^GRUB_THEME=" /etc/default/grub; then
+        sed -i 's|^GRUB_THEME=.*|GRUB_THEME="/boot/grub/themes/gunix/theme.txt"|' /etc/default/grub
+    else
+        echo 'GRUB_THEME="/boot/grub/themes/gunix/theme.txt"' >> /etc/default/grub
+    fi
+    grub-mkconfig -o /boot/grub/grub.cfg
+else
+    echo "Skipping GRUB theme (GRUB not found or theme files missing)"
+fi
+
+# Apply os-release branding
+echo "Applying GuNix OS branding..."
+cat > /etc/os-release <<'EOF'
+NAME="GuNix OS"
+PRETTY_NAME="GuNix OS"
+ID=gunix
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://github.com/ChicoGC/GuNix-OS"
+DOCUMENTATION_URL="https://github.com/ChicoGC/GuNix-OS/tree/main/docs"
+SUPPORT_URL="https://discord.gg/qtHZwzvRvR"
+BUG_REPORT_URL="https://github.com/ChicoGC/GuNix-OS/issues"
+EOF
+
 echo ""
 echo "✓ GuNix OS setup complete!"
 echo ""

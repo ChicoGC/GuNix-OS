@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# GuNix OS installer launcher
+# Runs from inside the live environment.
+
+set -e
+
+GUNIX_DIR="/root/GuNix-OS"
+
+if [[ ! -d "$GUNIX_DIR" ]]; then
+    echo "GuNix OS files not found, cloning from GitHub..."
+    git clone https://github.com/ChicoGC/GuNix-OS.git "$GUNIX_DIR"
+fi
+
+echo "Starting GuNix OS installer..."
+bash "$GUNIX_DIR/scripts/install.sh"
